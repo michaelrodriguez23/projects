@@ -19,7 +19,9 @@ table {
     padding: 5px;
     margin: 40px;
     text-align: left;
-  
+    a {
+        text-decoration:none;
+    }
   }
    a:hover {
       color:white;
