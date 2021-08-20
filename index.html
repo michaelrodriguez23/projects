@@ -5,6 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script>
+        let details = {
+            'social': 'Defacing the NYTIMES API to recontextualize headlines away from news outlets',
+            'carptentry': 'A terminal application that can read, write, update, and delete flooring orders for a carpentry company',
+            'ar': '4 projects exploring face tracking, plane tracking, audio tracking and target tracking with reactive model js.',
+            'portfolio': 'Personal portfolio designed with Reactjs & P5.js',
+            'google': 'Designed a front-end for Google Search, Google Image Search, and Google Advanced Search',
+            'pokedex': 'A pokedex that queries Pokemon using API calls with Graphql and React',
+            'cms': 'A publishing site that uses CRUD design to create, and maintain blogpost along with user priveledges',
+            'scratch': "Lyrical music video created with scratch foundation's coding software for children.",
+        }
+
+    
+        document.addEventListener('DOMContentLoaded',
+        function(){
+            let description = document.querySelector('#description'); 
+
+               
+                const projects = document.querySelectorAll('.project'); 
+
+               // Map the object details to each element that has the project class
+               projects.forEach(function(currProj,index) {
+                currProj.setAttribute('data-name',Object.values(details)[index]);
+        
+                currProj.addEventListener('mouseenter', function(){ 
+            
+                    
+                    description.innerHTML = currProj.dataset.name;
+                
+
+               })
+               
+              
+
+               description.innerHTML = 'hi'
+               
+
+            
+            
+            })
+           
+        });
+    </script>
     <title>Project Page</title>
 </head>
 <body>
@@ -17,56 +60,60 @@
     <table>
        <div class="table">
 <tbody>
+    
     <tr>
-        <td>Social News</td>
+        <td class="project">Social News</td>
     <td> <a href="https://michaelrodriguez23.github.io/WhatIsNews/"> demo</a></td>
-    <td> <a href="https://github.com/michaelrodriguez23/WhatIsNews"> code </a> </td>
+    <td> <a href="https://github.com/michaelrodriguez23/WhatIsNews"> code </a>  </td>
     </tr>
     <tr>
-        <td>Carpentry Sales App</td>
+        <td class="project">Carpentry Sales App</td>
         <td> <a href="https://www.youtube.com/watch?v=lylxpCr4ZHY"> demo</a></td>
         <td> <a href="https://github.com/michaelrodriguez23/SoftwareGuildBootCamp/tree/main/Summatives/FlooringOrdersMastery/Flooring"> code </a> </td>
         </tr>
         <tr>
-            <td>Getting Situated in Augmented Reality</td>
+            <td class="project">Getting Situated in Augmented Reality</td>
         <td> <a href="https://www.youtube.com/watch?v=LAFYb9Hl1NE"> demo</a></td>
         <td> <a href="https://github.com/michaelrodriguez23/SFPC_Projects"> code </a> </td>
         </tr>
         <tr>
             <tr>
-                <td>React JS Personal Portfolio</td>
+                <td class="project">React JS Personal Portfolio</td>
             <td> <a href="https://www.michael-elijah.com"> demo</a></td>
             <td> <a href="https://github.com/michaelrodriguez23/MainSite"> code </a> </td>
             </tr>
         </tr>
         <tr>
-        <td>Google Mock</td>
+        <td class="project" >Google Mock</td>
     <td> <a href="https://www.youtube.com/watch?v=vVXuXwjPUKE"> demo</a></td>
     <td> <a href="https://github.com/michaelrodriguez23/skynet_google"> code </a> </td>
     </tr>
 
-        <td>PokeDex</td>
+        <td class="project" >PokeDex</td>
     <td> <a href=""> demo</a></td>
     <td> <a href="https://github.com/michaelrodriguez23/pokedex"> code </a> </td>
     </tr>
  
         <tr>
-            <td>Content Managment System </td>
+            <td class="project">Content Managment System </td>
         <td> <a href=""> demo</a></td>
         <td> <a href="https://github.com/michaelrodriguez23/SoftwareGuildBootCamp/tree/main/Summatives/blog%202"> code </a>
          </td>
     </tr>
 
     <tr>
-        <td><a href="https://www.scratchfoundation.org">Scratch Foundation Animation</a> </td>
+        <td class="project" ><a href="https://www.scratchfoundation.org">Scratch Foundation Animation</a> </td>
     <td> <a href="https://www.youtube.com/watch?v=ALVAKasaPrw"> demo</a></td>
     <td> <a href="https://github.com/michaelrodriguez23/Edx-CS50x-Introduction-to-Computer-Science/tree/main/ProblemSets/Week0"> code </a>
+        
      </td>
 </tr>
 
-  
+  </table>
+
 </tbody>
-    </table>
-</div> 
+  
+<div id='description'> </div>
+
 </body>
 </html>

@@ -44,4 +44,14 @@ a {
   border-bottom: 1px solid greenyellow;
 }
 
+#description {
+  text-align: right;
+  margin-top: 100px;
+  margin-right: 20px;
+  color: white;
+  font-family: monospace;
+  text-decoration: overline;
+  font-size: 1.3em;
+}
+
 /*# sourceMappingURL=index.css.map */
