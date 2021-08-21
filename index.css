@@ -45,13 +45,19 @@ a {
 }
 
 #description {
-  text-align: right;
-  margin-top: 100px;
-  margin-right: 20px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
   color: white;
   font-family: monospace;
   text-decoration: overline;
   font-size: 1.3em;
+}
+
+#description-title {
+  text-align: left;
+  margin-top: 80px;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
