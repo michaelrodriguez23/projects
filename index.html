@@ -32,7 +32,6 @@
                 currProj.setAttribute('data-name',Object.keys(details)[index]);
                 currProj.setAttribute('data-value',Object.values(details)[index]);
             
-                console.log(currProj.dataset)
                 currProj.addEventListener('mouseenter', function(){ 
                     description.innerHTML = currProj.dataset.value;
                     descriptionTitle.innerHTML = currProj.dataset.name;
