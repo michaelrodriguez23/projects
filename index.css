@@ -40,17 +40,17 @@ a {
 
 #projects-title {
   text-align: left;
-  padding: 20px;
 }
 
 #description {
   text-align: left;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 10px;
   color: white;
   font-family: monospace;
   text-decoration: overline;
   font-size: 1.3em;
+  padding-bottom: 20px;
 }
 
 #description-title {
@@ -61,7 +61,7 @@ a {
 
 #about-me {
   text-align: center;
-  margin-left: 200px;
+  margin-left: 150px;
   box-shadow: 12px 5px 15px greenyellow, -12px -5px 15px greenyellow;
 }
 
