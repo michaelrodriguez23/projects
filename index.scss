@@ -40,6 +40,7 @@ table {
   #description{
       text-align: left;
       margin-top: 100px;
+      margin-left: 10px;
       color:white;
       font-family:monospace;
       text-decoration:overline;
@@ -47,12 +48,13 @@ table {
   }#description-title{
     text-align: left;
     margin-bottom:0px;
+    margin-left: 10px;
   }
   
   #about-me{
     text-align: center;
     margin-left: 200px;
-    box-shadow:  10px 10px 10px greenyellow, -10px -10px 15px orange;
+    box-shadow:  12px 5px 15px greenyellow, -12px -5px 15px greenyellow;
   }.flex-wrapper{
       display: flex;
       justify-content:start;
