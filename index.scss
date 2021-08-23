@@ -3,11 +3,16 @@ body {
     background-color:blue;
     color:white;
     #resume{
-        text-align:right;
-        margin-right: 20px;
-        text-decoration: none;
-        margin:0px;
+        // text-align:right;
+        // margin-right: 30px;
+        // text-decoration: none;
+        // margin:0px;
     }
+    #brief{
+    font-size: 11px;
+    text-align: center;
+    }
+
 }
 table {
     margin-left: 30px;
@@ -35,6 +40,7 @@ table {
   }
   #projects-title{
       text-align: left;
+      margin-left:20px;
   }
   #description{
       text-align: left;
@@ -59,6 +65,10 @@ table {
       display: flex;
       justify-content:start;
     
+  }
+  .nav{
+    display: flex;
+    justify-content: space-evenly;
   }
       
   
