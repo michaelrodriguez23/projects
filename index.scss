@@ -70,11 +70,19 @@ table {
     margin-left: 150px;
     cursor: url('Kirby.cur'), pointer;
   
+    #frame-bar:hover{
+      background-position: left bottom;
+    }
     #frame-bar{
       display: flex;
       justify-content: flex-end;
       border: .5px solid white;
       padding: 3px;
+      background: linear-gradient(to right, white 50%, blue 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all .5s ease-out;
+
       
      
       #open-button{
