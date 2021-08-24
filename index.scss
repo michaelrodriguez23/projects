@@ -3,7 +3,6 @@ body {
     font-family:monospace;
     background-color:blue;
     color:white;
-    cursor: url('Kirby.cur'), pointer;
    
     #brief{
     font-size: 11px;
@@ -65,12 +64,14 @@ table {
   #about-me-frame{
     text-align: center;
     margin-left: 150px;
+    cursor: url('Kirby.cur'), pointer;
   
     #frame-bar{
       display: flex;
       justify-content: flex-end;
       border: .5px solid white;
       padding: 3px;
+      
      
       #open-button{
         border: .5px solid white;

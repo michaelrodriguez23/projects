@@ -2,7 +2,6 @@ body {
   font-family: monospace;
   background-color: blue;
   color: white;
-  cursor: url("Kirby.cur"), pointer;
 }
 body #brief {
   font-size: 11px;
@@ -69,6 +68,7 @@ a {
 #about-me-frame {
   text-align: center;
   margin-left: 150px;
+  cursor: url("Kirby.cur"), pointer;
 }
 #about-me-frame #frame-bar {
   display: flex;
