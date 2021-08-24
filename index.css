@@ -71,23 +71,33 @@ a {
   margin-left: 10px;
 }
 
+#about-me-frame:hover {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(2deg);
+}
+
 #about-me-frame {
   text-align: center;
   margin-left: 150px;
-  cursor: url("Kirby.cur"), pointer;
+  transition: all 0.3s ease-in-out;
 }
 #about-me-frame #frame-bar:hover {
   background-position: left bottom;
+  cursor: url("Kirby.cur"), pointer;
 }
 #about-me-frame #frame-bar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   border: 0.5px solid white;
   padding: 3px;
   background: linear-gradient(to right, white 50%, blue 50%);
   background-size: 200% 100%;
-  background-position: right bottom;
+  background-position: bottom right;
   transition: all 0.5s ease-out;
+}
+#about-me-frame #frame-bar p {
+  margin: auto;
 }
 #about-me-frame #frame-bar #open-button {
   border: 0.5px solid white;

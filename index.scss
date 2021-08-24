@@ -66,25 +66,41 @@ table {
     margin-left: 10px;
   }
   
+  #about-me-frame:hover{
+    transition: all .3s ease-in-out;
+    transform:rotate(2deg);
+  }
   #about-me-frame{
     text-align: center;
     margin-left: 150px;
-    cursor: url('Kirby.cur'), pointer;
+    transition: all .3s ease-in-out;
+  
+
+  
+ 
+  
   
     #frame-bar:hover{
       background-position: left bottom;
+      cursor: url('Kirby.cur'), pointer;
+      
     }
     #frame-bar{
       display: flex;
       justify-content: flex-end;
+   
+      align-items:center;
       border: .5px solid white;
       padding: 3px;
       background: linear-gradient(to right, white 50%, blue 50%);
       background-size: 200% 100%;
-      background-position: right bottom;
+      background-position: bottom right;
       transition: all .5s ease-out;
-
       
+    p{
+      // cenetering the about me   
+      margin: auto;
+    }      
      
       #open-button{
         border: .5px solid white;
