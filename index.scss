@@ -68,21 +68,17 @@ table {
   
   #about-me-frame:hover{
     transition: all .3s ease-in-out;
-    transform:rotate(2deg);
+    
   }
   #about-me-frame{
     text-align: center;
     margin-left: 150px;
     transition: all .3s ease-in-out;
   
-
-  
- 
-  
-  
     #frame-bar:hover{
       background-position: left bottom;
       cursor: url('Kirby.cur'), pointer;
+      transform:rotate(2deg);
       
     }
     #frame-bar{
@@ -107,14 +103,7 @@ table {
         padding:5px;
         color:white;
         background: blue;
-        transition:background 0.2s;
-      }
-      #close-button{
-        border: .5px solid white;
-        padding:5px;
-        color:white;
-        background: green;
-        transition:background 0.2s;
+       
       }
       #open-button:hover{
         border: .5px solid lightgreen;

@@ -21,6 +21,8 @@
         document.addEventListener('DOMContentLoaded',
         function(){
         
+         
+         
             let hoverToggle = false; 
             let description = document.querySelector('#description'); 
             let descriptionTitle = document.querySelector('#description-title'); 
@@ -28,8 +30,19 @@
                 const projects = document.querySelectorAll('.project'); 
                 let accordian = document.querySelector("#open-button");
                 let vidFrame = document.querySelector("#vid-wrapper");
+                vidFrame.style.visibility = 'hidden'
                 let tableFrame = document.querySelector('table');
 
+                const transition = document.querySelector('#frame-bar');
+
+transition.addEventListener('transitionend', () => {
+    // Toggle active and unactive class to collapse frame
+    
+    if(vidFrame.style.visibility = "hidden"){
+             vidFrame.style.visibility="visible"
+             vidFrame.style.height="3200px;"
+    }
+});
 
                 tableFrame.addEventListener("mouseleave", function(){
                     console.log('out');
@@ -44,20 +57,19 @@
                 })
 
                 accordian.addEventListener('click', function(){
-                  
+                    
                     // Toggle active and unactive class to collapse frame
                     if(accordian.textContent == '_'){
                         vidFrame.style.visibility="hidden"
                         vidFrame.style.height="0px;"
                         accordian.textContent = "+";
                     }else {
-                        console.log("else")
                         vidFrame.style.visibility="visible"
                         vidFrame.style.height="320px;"
                         accordian.textContent = "_";
 
                     }
-    
+               
                 })
 
                // Map the object details to each element that has the project class

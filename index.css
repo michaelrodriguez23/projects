@@ -73,7 +73,6 @@ a {
 
 #about-me-frame:hover {
   transition: all 0.3s ease-in-out;
-  transform: rotate(2deg);
 }
 
 #about-me-frame {
@@ -84,6 +83,7 @@ a {
 #about-me-frame #frame-bar:hover {
   background-position: left bottom;
   cursor: url("Kirby.cur"), pointer;
+  transform: rotate(2deg);
 }
 #about-me-frame #frame-bar {
   display: flex;
@@ -104,14 +104,6 @@ a {
   padding: 5px;
   color: white;
   background: blue;
-  transition: background 0.2s;
-}
-#about-me-frame #frame-bar #close-button {
-  border: 0.5px solid white;
-  padding: 5px;
-  color: white;
-  background: green;
-  transition: background 0.2s;
 }
 #about-me-frame #frame-bar #open-button:hover {
   border: 0.5px solid lightgreen;
