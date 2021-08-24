@@ -26,6 +26,31 @@
 
                
                 const projects = document.querySelectorAll('.project'); 
+                let accordian = document.querySelector("#open-button");
+                let vidFrame = document.querySelector("#vid-wrapper");
+                
+                accordian.addEventListener('click', function(){
+                  
+                    // Toggle active and unactive class to collapse frame
+                    if(accordian.textContent == '_'){
+                        vidFrame.style.visibility="hidden"
+                        vidFrame.style.height="0px;"
+                        accordian.textContent = "+";
+                    }else {
+                        console.log("else")
+                        vidFrame.style.visibility="visible"
+                        vidFrame.style.height="320px;"
+                        accordian.textContent = "_";
+                        
+                
+
+                    }
+                        
+                        
+                        
+
+                    
+                })
 
                // Map the object details to each element that has the project class
                projects.forEach(function(currProj,index) {
@@ -36,6 +61,8 @@
                     description.innerHTML = currProj.dataset.value;
                     descriptionTitle.innerHTML = currProj.dataset.name;
     
+
+
                })
               
             
@@ -103,7 +130,7 @@
 
     <tr>
         <td class="project" ><a href="https://www.scratchfoundation.org"target="_blank"> Scratch Foundation Animation</a> </td>
-    <td> <a href="https://www.youtube.com/watch?v=ALVAKasaPrw"target="_blank"> demo</a></td>
+    <td> <a href="https://www.youtube.com/watch?v=ALVAKasaPrw"target="_blank"> demo </a> </td>
     <td> <a href="https://github.com/michaelrodriguez23/Edx-CS50x-Introduction-to-Computer-Science/tree/main/ProblemSets/Week0"target="_blank"> code </a>
         
      </td>
@@ -112,8 +139,16 @@
   </table>
 
 </tbody>
-<div id=about-me>
-    <iframe width="620" height="355" src="https://www.youtube-nocookie.com/embed/iaFBtDNZGXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id=about-me-frame>
+    <div id="about-me">
+    <div id=frame-bar>
+        <button id="open-button">_</button>
+    </div>
+</div>
+<div id="vid-wrapper">
+    <iframe id="about-me-vid" width="620" height="355" src="https://www.youtube-nocookie.com/embed/iaFBtDNZGXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 </div>
 </div>
 
