@@ -21,13 +21,27 @@
         document.addEventListener('DOMContentLoaded',
         function(){
         
+            let hoverToggle = false; 
             let description = document.querySelector('#description'); 
             let descriptionTitle = document.querySelector('#description-title'); 
                
                 const projects = document.querySelectorAll('.project'); 
                 let accordian = document.querySelector("#open-button");
                 let vidFrame = document.querySelector("#vid-wrapper");
-               
+                let tableFrame = document.querySelector('table');
+
+
+                tableFrame.addEventListener("mouseleave", function(){
+                    console.log('out');
+                    if(description.style.display === "none"){
+                        description.style.display = "block"
+                        descriptionTitle.style.display = "block"
+                    }
+                    else{
+                        description.style.display = "none";
+                        descriptionTitle.style.display = "none";
+                    }
+                })
 
                 accordian.addEventListener('click', function(){
                   
@@ -41,15 +55,9 @@
                         vidFrame.style.visibility="visible"
                         vidFrame.style.height="320px;"
                         accordian.textContent = "_";
-                        
-                
 
                     }
-                        
-                        
-                        
-
-                    
+    
                 })
 
                // Map the object details to each element that has the project class
@@ -57,18 +65,17 @@
                 currProj.setAttribute('data-name',Object.keys(details)[index]);
                 currProj.setAttribute('data-value',Object.values(details)[index]);
             
-            
                 currProj.addEventListener('mouseenter', function(){ 
+                    hoverToggle = true;
                     description.innerHTML = currProj.dataset.value;
                     descriptionTitle.innerHTML = currProj.dataset.name;
-    
-
-
+                    console.log('enter')
+                    description.style.display = "block"
+                   descriptionTitle.style.display = "block"
                })
               
-            
             })
-           
+    
         });
     </script>
     <title>Project Page</title>
@@ -87,7 +94,7 @@
     <div class="flex-wrapper">
     <table>
        <div class="table">
-<tbody>
+<tbody id="tbody">
     
     <tr>
         <td class="project">  <a href="https://michaelrodriguez23.github.io/WhatIsNews/" target="_blank"> Social News  </a> </td>
