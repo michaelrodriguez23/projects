@@ -1,15 +1,17 @@
 
-
 body {
     font-family:monospace;
     background-color:blue;
     color:white;
+    cursor: url('Kirby.cur'), pointer;
+   
     #brief{
     font-size: 11px;
     margin:0px;
     padding: 0px;
     box-sizing:content-box;
     text-align: center;
+    
     }
 
 }
@@ -26,12 +28,17 @@ table {
         text-decoration:none;
     }
   }
+  button{
+    cursor: url('stoneKirby.cur'), pointer;
+  }
    a:hover {
       color:white;
+     
   }
   a { 
       color:white;
       text-decoration:none;
+      cursor: url('stoneKirby.cur'), pointer;
   }
   #title {
     text-align: center;
