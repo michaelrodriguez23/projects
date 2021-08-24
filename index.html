@@ -23,12 +23,12 @@
         
             let description = document.querySelector('#description'); 
             let descriptionTitle = document.querySelector('#description-title'); 
-
                
                 const projects = document.querySelectorAll('.project'); 
                 let accordian = document.querySelector("#open-button");
                 let vidFrame = document.querySelector("#vid-wrapper");
-                
+               
+
                 accordian.addEventListener('click', function(){
                   
                     // Toggle active and unactive class to collapse frame
@@ -56,6 +56,7 @@
                projects.forEach(function(currProj,index) {
                 currProj.setAttribute('data-name',Object.keys(details)[index]);
                 currProj.setAttribute('data-value',Object.values(details)[index]);
+            
             
                 currProj.addEventListener('mouseenter', function(){ 
                     description.innerHTML = currProj.dataset.value;
@@ -146,7 +147,7 @@
     </div>
 </div>
 <div id="vid-wrapper">
-    <iframe id="about-me-vid" width="620" height="355" src="https://www.youtube-nocookie.com/embed/iaFBtDNZGXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="about-me-vid" width="620" height="320" src="https://www.youtube-nocookie.com/embed/iaFBtDNZGXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 </div>

@@ -14,10 +14,14 @@ body {
     }
 
 }
+.nav{
+  border-top:.5px solid white;
+  border-bottom:.5px solid white;
+}
 table {
     margin-left: 30px;
     padding: 20px;
-    width: 350px;
+    width: 330px;
   }
    td {
     padding: 5px;
@@ -48,7 +52,7 @@ table {
   }
   #description{
       text-align: left;
-      margin-top: 26px;
+      margin-top: 25px;
       margin-left: 10px;
       color:white;
       font-family:monospace;
