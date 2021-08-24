@@ -22,7 +22,7 @@
         function(){
         
          
-         
+            let shown = false;
             let hoverToggle = false; 
             let description = document.querySelector('#description'); 
             let descriptionTitle = document.querySelector('#description-title'); 
@@ -30,6 +30,7 @@
                 const projects = document.querySelectorAll('.project'); 
                 let accordian = document.querySelector("#open-button");
                 let vidFrame = document.querySelector("#vid-wrapper");
+                let bar = document.querySelector('#frame-bar')
                 vidFrame.style.visibility = 'hidden'
                 let tableFrame = document.querySelector('table');
 
@@ -37,12 +38,22 @@
 
 transition.addEventListener('transitionend', () => {
     // Toggle active and unactive class to collapse frame
-    
+    if(!shown){
     if(vidFrame.style.visibility = "hidden"){
              vidFrame.style.visibility="visible"
-             vidFrame.style.height="3200px;"
-    }
+             vidFrame.style.height="300px;"
+             shown = true;
+             bar.style.transform= 'rotate(0deg)'
+             setTimeout(function(){
+            bar.style.transitionProperty = 'none'
+             bar.style.background= 'none'
+             },2000)
+       
+            
+    } 
+}
 });
+
 
                 tableFrame.addEventListener("mouseleave", function(){
                     console.log('out');
@@ -57,10 +68,10 @@ transition.addEventListener('transitionend', () => {
                 })
 
                 accordian.addEventListener('click', function(){
-                    
-                    // Toggle active and unactive class to collapse frame
+                     vidFrame.style.visibility="hidden"
+              
                     if(accordian.textContent == '_'){
-                        vidFrame.style.visibility="hidden"
+                      
                         vidFrame.style.height="0px;"
                         accordian.textContent = "+";
                     }else {
